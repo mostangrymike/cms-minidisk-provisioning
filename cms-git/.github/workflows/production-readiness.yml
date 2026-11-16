@@ -1,0 +1,16 @@
+name: Production Readiness (cms-git)
+on:
+  push:
+  pull_request:
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Run offline tests
+        run: python -m unittest discover -v
+      - name: Run credential check
+        run: python cms-git/credential_check.py
