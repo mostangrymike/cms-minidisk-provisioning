@@ -2,3 +2,7 @@
 *.pyc
 .builds/
 inventory*.json
+ownership.key
+ownership-receipts*.json
+consumed-receipts*.json
+*.receipt.json
