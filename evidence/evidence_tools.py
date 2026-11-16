@@ -5,7 +5,10 @@ import os
 from pathlib import Path
 from typing import Iterable, Tuple
 
-from .evidence_schema import validate_evidence
+try:
+    from .evidence_schema import validate_evidence
+except ImportError:  # run as a plain script
+    from evidence_schema import validate_evidence
 
 
 def load_evidences(directory: str | Path) -> Iterable[Tuple[Path, dict]]:

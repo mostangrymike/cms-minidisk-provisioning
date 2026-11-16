@@ -1,4 +1,4 @@
-name: Production Readiness (cms-git)
+name: Production Readiness (evidence tooling)
 on:
   push:
   pull_request:
@@ -13,4 +13,4 @@ jobs:
       - name: Run offline tests
         run: python -m unittest discover -v
       - name: Run credential check
-        run: python cms-git/credential_check.py
+        run: python evidence/credential_check.py

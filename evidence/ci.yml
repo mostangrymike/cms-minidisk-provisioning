@@ -1,4 +1,4 @@
-name: cms-git CI
+name: evidence CI
 on:
   pull_request:
   push:

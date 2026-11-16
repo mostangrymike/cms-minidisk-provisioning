@@ -3,7 +3,7 @@ import os
 import sys
 import unittest
 
-# Ensure the cms-git modules are importable from this tests directory
+# Ensure the evidence modules are importable from this tests directory
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import evidence_schema
 class CmsEvidenceTests(unittest.TestCase):

@@ -6,7 +6,7 @@ Overview
 Runbook outline
 - Prepare profiles at ~/.config/cms-tooling/cms_profiles.json and validate via test_cms_profiles_offline_end2end.py
 - Run offline end-to-end tests for profile-based Telnet/FTP paths
-- Run credential checks (cms-git/credential_check.py) as part of PR gate
+- Run credential checks (evidence/credential_check.py) as part of PR gate
 - Deploy CI changes and ensure main tests pass
 - Publish Runbook and update README with production guidance
 
